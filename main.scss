@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body
+{
+    height: 200vh;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.nav
+{
+    background-color: #6E00FF;
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    a
+    {
+        color: white;
+    }
+}
+
+header
+{
+    display: flex;
+    height: -1em;
+    justify-content: space-evenly;
+    background:#2b4475;
+    padding: 1em 2em 1em 2em;
+    .logo
+    {
+        color:#F6AE2D;
+        font-family: Malayalam MN;
+        font-weight: bolder;
+    }
+    ul
+    {
+        display: flex;
+        font-family: Malayalam MN;
+        font-weight: bold;
+        a
+        {
+            display: block;
+            padding: 0 4em;
+        }
+    }
+    #rgb
+   {
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+    border-radius: 50px;
+    z-index: 1;
+    background-size: 400%;
+   }
+
+    a:hover
+    {
+        animation: sun 8s infinite;
+    }
+    a:hover::before
+    {
+        animation: sun 8s infinite;
+    }
+    @keyframes sun 
+    {
+        100%
+        {
+            background-position: -400% 0;
+        }
+    
+    
+    }
+    a::before {
+        content: '';
+        position: absolute;
+        border-radius: 50px;
+        background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(20px);
+    }
+
+}
+
+
+
+.mee
+{
+    position: relative;
+    left: 970rem;
+    bottom:700rem;
+    width: 503;
+    height: 670px;
+}
+.social
+{
+    display: block;
+    ul
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 14em;
+        float: right;
+        padding: 1em 10em 1em 10em;
+
+        img
+        {
+            width: 40px;
+            display: table-cell;
+            padding: 0;
+        }
+    }
+}
+
+.hero
+{
+    background-color:black;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+.hero
+{
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+}
+.hero-design
+{
+    margin-left: -100px;
+    width: 75%;
+    position: relative;
+    right: 300px;
+    top:130px;
+
+}
+.content
+{
+    background:#33658A;
+    font-family: Malayalam MN;
+    font-size: 22px;
+    padding: 1em 8em 10em 4em;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    text-align: left;
+}
+.doc
+{   
+    margin-left: 450px;
+    margin-right:400px;
+    margin-top:-180px;
+    margin-bottom: 100px;
+
+}
+.mm
+{
+    display: flex;
+    margin: unset;
+    width: 300px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    top:300px;
+}
+.meet
+{
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+}
+
+.myyy
+{
+    width: 512px;
+    margin-left: 110em;
+    position: absolute;
+    margin-top: 6.97em;
+   
+
+}
+
+section
+{
+    padding: 4em 2em;
+    text-align: center;
+
+}
+.feature
+{
+    position: relative;
+    
+}
+.feature::before
+{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E5D5FA;
+    top:0;
+    left: 0;
+    z-index: -1;
+    
+}
+.subtitle
+{
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    color: #6E00FF;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+
+}
+
+.feature_title
+{
+    color: black;
+    text-align: left;
+    font-family: Malayalam MN;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -.4em;
+    display: block;
+}
+.featured-desc
+{
+    color: black;
+    margin-top: 10em;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.skills
+{
+    background-color: #86BBD8;
+}
+.skills_container ul li
+{
+    background-color: white;
+    padding: 10em 1em;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.icon_one
+    {
+        height: 100px;
+        position: relative;
+        bottom: 100px;
+    }
+
+.icon_two
+    {
+        height: 100px;
+        position: relative;
+        bottom: 100px;
+    }
+.icon_three
+    {
+        height: 100px;
+        position: relative;
+        bottom: 100px;
+    }
+
+.skills_container ul
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap:1em;
+}
+
+.skill_title
+{
+    font-weight: bold;
+    font-family: Malayalam MN;
+    
+
+}
+.sd
+{
+   place-content: left;
+   font-family: Helvetica;
+   font-size: larger;
+   font-weight: 500;
+}
+.pro
+{
+    height: 512px;
+    width: 1080px;
+    margin-left: 500px;
+    margin-top: -15em;
+    margin-bottom: 10em;
+}
+.portfolio-item {
+	margin-bottom: 25px;
+}
+
+@media only screen and (min-width:1560px) {
+
+    .hero-design
+{
+    margin-left: -250px;
+    width: 60%;
+    margin-bottom: 80px;
+    
+
+}
+
+header
+{
+    display: flex;
+    height: -1em;
+    justify-content: space-between;
+    background:#2b4475;
+    padding: 1em 1em 1em 6em;
+    .logo
+    {
+        color:#F6AE2D;
+        font-family: Malayalam MN;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    ul
+    {
+        display: flex;
+        font-family: Malayalam MN;
+        font-weight: bold;
+        a
+        {
+            display: block;
+            font-size: x-large;
+            padding: 0 4em;
+        }
+    }
+    #rgb
+   {
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+    border-radius: 50px;
+    z-index: 1;
+    background-size: 400%;
+   }
+
+    a:hover
+    {
+        animation: sun 8s infinite;
+    }
+    a:hover::before
+    {
+        animation: sun 8s infinite;
+    }
+    @keyframes sun 
+    {
+        100%
+        {
+            background-position: -400% 0;
+        }
+    
+    
+    }
+    a::before {
+        content: '';
+        position: absolute;
+        border-radius: 50px;
+        background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(20px);
+    }
+
+}
+
+.mm
+{
+    display: flex;
+    margin: unset;
+    width: 300px;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    position: relative;
+    top:300px;
+}
+
+.skill_title
+{
+    font-weight: bold;
+    font-family: Malayalam MN;
+    font-size: x-large;
+}
+.sd
+{
+   place-content: left;
+   font-family: Helvetica;
+   font-size: larger;
+   font-weight: 500;
+}
+
+
+}
+
+
