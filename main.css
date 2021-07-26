@@ -2,7 +2,7 @@
 body {
   height: 200vh;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 ul {
@@ -17,14 +17,16 @@ a {
 
 .nav {
   background-color: #6E00FF;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 66% auto;
-      grid-template-columns: 66% auto;
+  grid-template-columns: 66% auto;
   background: unset;
 }
-
 .nav a {
+  color: white;
+}
+
+.meetme {
+  text-decoration: none;
   color: white;
 }
 
@@ -39,13 +41,11 @@ header {
   background: #2b4475;
   padding: 1em 2em 1em 2em;
 }
-
 header .logo {
   color: #F6AE2D;
   font-family: Malayalam MN;
   font-weight: bolder;
 }
-
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,12 +53,10 @@ header ul {
   font-family: Malayalam MN;
   font-weight: bold;
 }
-
 header ul a {
   display: block;
   padding: 0 4em;
 }
-
 header #rgb {
   text-transform: uppercase;
   color: #fff;
@@ -68,31 +66,26 @@ header #rgb {
   z-index: 1;
   background-size: 400%;
 }
-
 header a:hover {
   -webkit-animation: sun 8s infinite;
           animation: sun 8s infinite;
 }
-
 header a:hover::before {
   -webkit-animation: sun 8s infinite;
           animation: sun 8s infinite;
 }
-
 @-webkit-keyframes sun {
   100% {
     background-position: -400% 0;
   }
 }
-
 @keyframes sun {
   100% {
     background-position: -400% 0;
   }
 }
-
 header a::before {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#09a8f4));
@@ -114,7 +107,6 @@ header a::before {
 .social {
   display: block;
 }
-
 .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +118,6 @@ header a::before {
   float: right;
   padding: 1em 10em 1em 10em;
 }
-
 .social ul img {
   width: 40px;
   display: table-cell;
@@ -136,17 +127,14 @@ header a::before {
 .hero {
   background-color: black;
   color: white;
-  display: -ms-grid;
   display: grid;
   text-align: center;
   padding: 4em;
 }
 
 .hero {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 66% auto;
-      grid-template-columns: 66% auto;
+  grid-template-columns: 66% auto;
   background: unset;
   padding: 0;
 }
@@ -239,17 +227,23 @@ section {
   font-family: Malayalam MN;
   font-weight: bold;
   font-size: 40px;
-  margin-top: -.4em;
+  margin-top: -0.4em;
   display: block;
 }
 
 .featured-desc {
   color: black;
   margin-top: 10em;
-  font-size: .9em;
+  font-size: 1.4em;
   line-height: 1.8em;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+}
+
+.profea {
+  text-decoration: none;
+  color: black;
 }
 
 .skills {
@@ -282,30 +276,44 @@ section {
 }
 
 .skills_container ul {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 1em;
 }
 
 .skill_title {
   font-weight: bold;
+  font-size: large;
   font-family: Malayalam MN;
 }
 
 .sd {
   place-content: left;
-  font-family: Helvetica;
-  font-size: larger;
-  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
 }
 
 .pro {
-  height: 512px;
-  width: 1080px;
-  margin-left: 500px;
-  margin-top: -15em;
+  height: 30%;
+  width: 30%;
+  margin-left: 70em;
+  margin-top: -40em;
+  margin-bottom: 10em;
+}
+
+.pro3 {
+  height: 30%;
+  width: 30%;
+  margin-left: 70em;
+  margin-top: -20em;
+  margin-bottom: 10em;
+}
+
+.pro1 {
+  height: 30%;
+  width: 30%;
+  margin-left: 70em;
+  margin-top: -40em;
   margin-bottom: 10em;
 }
 
@@ -314,11 +322,19 @@ section {
 }
 
 @media only screen and (min-width: 1560px) {
+  .myyy {
+    width: 512px;
+    margin-left: 110em;
+    position: absolute;
+    margin-top: 6.97em;
+  }
+
   .hero-design {
     margin-left: -250px;
     width: 60%;
     margin-bottom: 80px;
   }
+
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -376,7 +392,7 @@ section {
     }
   }
   header a::before {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50px;
     background-image: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#09a8f4));
@@ -386,6 +402,7 @@ section {
     -webkit-filter: blur(20px);
             filter: blur(20px);
   }
+
   .mm {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -398,11 +415,13 @@ section {
     position: relative;
     top: 300px;
   }
+
   .skill_title {
     font-weight: bold;
     font-family: Malayalam MN;
     font-size: x-large;
   }
+
   .sd {
     place-content: left;
     font-family: Helvetica;
@@ -410,4 +429,44 @@ section {
     font-weight: 500;
   }
 }
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 1500px) {
+  .featured-desc {
+    color: black;
+    margin-top: 10em;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .myyy {
+    width: 512px;
+    margin-left: 60em;
+    position: absolute;
+    margin-top: 2.05em;
+  }
+
+  .pro1 {
+    height: 30%;
+    width: 30%;
+    margin-left: 60em;
+    margin-top: -40em;
+    margin-bottom: 10em;
+  }
+
+  .pro {
+    height: 30%;
+    width: 30%;
+    margin-left: 60em;
+    margin-top: -40em;
+    margin-bottom: 10em;
+  }
+
+  .pro3 {
+    height: 30%;
+    width: 30%;
+    margin-left: 60em;
+    margin-top: -10em;
+    margin-bottom: 10em;
+  }
+}/*# sourceMappingURL=main.css.map */

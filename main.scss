@@ -29,6 +29,11 @@ a
         color: white;
     }
 }
+.meetme
+{
+    text-decoration:none;
+    color: white;
+}
 
 header
 {
@@ -60,6 +65,7 @@ header
     color: #fff;
     background-image: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
     border-radius: 50px;
+    
     z-index: 1;
     background-size: 400%;
    }
@@ -184,14 +190,15 @@ header
     bottom: 20px;
 }
 
+
+
+
 .myyy
 {
     width: 512px;
     margin-left: 110em;
     position: absolute;
     margin-top: 6.97em;
-   
-
 }
 
 section
@@ -200,6 +207,7 @@ section
     text-align: center;
 
 }
+
 .feature
 {
     position: relative;
@@ -243,11 +251,17 @@ section
 {
     color: black;
     margin-top: 10em;
-    font-size: .9em;
+    font-size: 1.4em;
     line-height: 1.8em;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 
+}
+.profea
+{
+    text-decoration:none;
+    color: black;
 }
 
 .skills
@@ -292,6 +306,7 @@ section
 .skill_title
 {
     font-weight: bold;
+    font-size: large;
     font-family: Malayalam MN;
     
 
@@ -299,23 +314,58 @@ section
 .sd
 {
    place-content: left;
-   font-family: Helvetica;
-   font-size: larger;
-   font-weight: 500;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: x-large;
+   
 }
 .pro
 {
-    height: 512px;
-    width: 1080px;
-    margin-left: 500px;
-    margin-top: -15em;
+    height: 30%;
+    width: 30%;
+    margin-left: 70em;
+    margin-top: -40em;
     margin-bottom: 10em;
 }
+
+.pro3
+{
+    height: 30%;
+    width: 30%;
+    margin-left: 70em;
+    margin-top: -20em;
+    margin-bottom: 10em;
+}
+.pro1
+{
+    height: 30%;
+    width: 30%;
+    margin-left: 70em;
+    margin-top: -40em;
+    margin-bottom: 10em;
+}
+
+
 .portfolio-item {
 	margin-bottom: 25px;
 }
 
-@media only screen and (min-width:1560px) {
+
+
+
+
+
+
+
+@media only screen and (min-width:1560px) 
+{
+    
+    .myyy
+    {
+        width: 512px;
+        margin-left: 110em;
+        position: absolute;
+        margin-top: 6.97em;
+    }
 
     .hero-design
 {
@@ -418,6 +468,69 @@ header
 }
 
 
+
+
 }
+
+@media only screen and (max-width:1500px)
+{
+    .featured-desc
+    {
+    color: black;
+    margin-top: 10em;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 600;
+    text-align: left;
+
+    }
+
+    
+        .myyy
+    {
+        width: 512px;
+        margin-left: 60em;
+        position: absolute;
+        margin-top: 2.05em;
+    }
+
+        .pro1
+    {
+    height: 30%;
+    width: 30%;
+    margin-left: 60em;
+    margin-top: -40em;
+    margin-bottom: 10em;
+    }
+
+        .pro
+    {
+    height: 30%;
+    width: 30%;
+    margin-left: 60em;
+    margin-top: -40em;
+    margin-bottom: 10em;
+    }
+        .pro3
+    {
+        height: 30%;
+        width: 30%;
+        margin-left: 60em;
+        margin-top: -10em;
+        margin-bottom: 10em;
+    }
+    
+
+
+    
+    
+}
+    
+
+
+
+
+
+
 
 

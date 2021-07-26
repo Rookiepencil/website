@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="#projects">My projects</a></li>
                 <li><a href="#mskills">My skills</a></li>
-                <li><a href="#" id="rgb">Hire me</a></li>
+                <li><a href="resume.pdf"  download="HaoJun Zhao_Resume"  id="rgb">Hire me</a></li>
             </ul>
 
             <!-- nav ul li header-->
@@ -35,7 +35,7 @@
             <h1>A Junior Engineer <br>With Author Mentality</h1>
                 <img src="eng.png" class="doc">
             <div class="mm">
-                <p>Meet me</p>
+                <p class="meetme"><a href="resume.pdf" class="meetme"  download="HaoJun Zhao_Resume" >Meet me</a></p>
                 <img src="mme.png" class="meet" title="you will go to the other website">
             </div>
 
@@ -65,7 +65,7 @@
                 <p class="featured-desc">using mahinehioahfaoishfoisahfsodfhsdofhwfhdfishfdoshshdfoishidhfsodhfso<br>aosjhdoashdsodhioahsdoahnosandoandsoa<br>niowadnhoewdhnowedow</p>
             </div>
         </div>
-        <img class="pro" src="pro.png">
+        <img class="pro3" src="pro.png">
     </section>
 
 
@@ -76,12 +76,19 @@
                 <p class="subtitle"><a id="projects">Personal Projects</a></p>
                 <a href="#" class="feature_title">Sequential Logic Circuit Design </a>
                 <p class="featured-desc">Get a 7-segment display (7SD) to cycle through your student number by using sequential logic 
-                    design. <br>I use a decoder chip (CD74HC4511E) to drive the 7SD.<br>
-                    Sequential logic design: take the inputs to the decoder off of flip flops, and design the flip-flops 
-                    to cycle through states<br> representing my student number(400179164).<br>I use K-mapping to figure out the logic I need. I also use Multisim to simulate my whole circuit.<br>I attached the video and my final report below:</p>
+                    design. <br><br>using a decoder chip (CD74HC4511E) to drive the 7SD.<br><br>
+                    Sequential logic design:  take the inputs to the decoder off of flip flops, and design the flip-flops 
+                    to cycle through states<br><br>representing my student number(400179164).<br><br>
+                    I use K-mapping to figure out the logic I need. I also use Multisim to simulate my whole circuit.<br>I attached the video and my final report below: <br><br>
+                    <a href="https://www.youtube.com/watch?v=PIcKK4Ny-T4" target="_blank" class="profea">https://www.youtube.com/watch?v=PIcKK4Ny-T4</a><br><br>
+                    <a href="DP_zhaoh52.pdf" download="FINAL REPORT" class="profea">Click Here to download Final Project Report</a>
+
+                    <a href="DP_zhaoh52.pdf"  download="DP_zhaoh52.pdf"  id="rgb">Final Report</a>
+                </p><br>
+                <a href="DP_zhaoh52.pdf"  download="DP_zhaoh52.pdf"  id="rgb2" class="button">Final Report</a>
             </div>
         </div>
-        <img class="pro" src="pro.png">
+        <img class="pro" src="Picture1.png">
     </section>
 
 
@@ -90,11 +97,19 @@
         <div class="second">
             <div class="inner_transition3">
                 <p class="subtitle"><a id="projects">Personal Projects</a></p>
-                <a href="#" class="feature_title">Voice selector Using Machine learning</a>
-                <p class="featured-desc">using mahinehioahfaoishfoisahfsodfhsdofhwfhdfishfdoshshdfoishidhfsodhfso<br>aosjhdoashdsodhioahsdoahnosandoandsoa<br>niowadnhoewdhnowedow</p>
+                <a href="#" class="feature_title">Gear Train design</a>
+                <p class="featured-desc">Working as a group to design a prosthetic hand which can simulate the motion of thumb and forefinger.
+                    <br>the motion should be in the opposite direction<br></br
+                    >Given the specific input speed 139 RPM, the final output speed should be 15 RPM.<br><br>
+                    Using Autodesk Inventor to simulate and assemble the whole design<br><br>
+                    Using 3D-printer to print each gear and the frame and assembling them together in real world<br><br>
+                    I attached my final report and simulation video on inventor below:<br><br>
+                    <a href="https://youtu.be/8gApa-HnANM" target="_blank" class="profea">https://youtu.be/8gApa-HnANM</a><br><br>
+                    <a href="final report.pdf" download="FINAL Gear train report" class="profea">Click Here to download Final Project Report</a>
+                </p>
             </div>
         </div>
-        <img class="pro" src="pro.png">
+        <img class="pro1" src="gear train.png">
     </section>
 
     <section class="skills">
@@ -171,6 +186,43 @@
             opacity:0,
             duration:1.2,
             stagger:.3
+        })
+
+        gsap.from('.pro',{
+            scrollTrigger:{
+                trigger:'.inner_transition2',
+                start:"top bottom"
+            },
+
+            x:'30%',
+            y:'-30%',
+            opacity:0,
+            duration:2,
+            ease:Power4.easeout
+        })
+        gsap.from('.pro1',{
+            scrollTrigger:{
+                trigger:'.inner_transition3',
+                start:"top bottom"
+            },
+
+            x:'30%',
+            y:'-30%',
+            opacity:0,
+            duration:2,
+            ease:Power4.easeout
+        })
+        gsap.from('.pro3',{
+            scrollTrigger:{
+                trigger:'.inner_transition',
+                start:"top bottom"
+            },
+
+            x:'30%',
+            y:'-30%',
+            opacity:0,
+            duration:2,
+            ease:Power4.easeout
         })
 
         gsap.from(".inner_transition2",{
